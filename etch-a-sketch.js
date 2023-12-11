@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             click = !click;
             let draw = document.querySelector("#draw");
             if(click){
-                draw.innerHTML = "Now you can draw"
+                draw.innerHTML = "Now you can draw";
             } else{
                 draw.innerHTML = "You're not allowed to draw"
             }
@@ -25,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function createBoard(size) {
     let board = document.querySelector(".board");
-    board.style.gridTemplateColumns = `${size}, 1fr`;
-    board.style.gridTemplateRows = `${size}, 1fr`;
+
+    board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
     let numDivs = size * size;
 
