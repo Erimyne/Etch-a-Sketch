@@ -1,8 +1,8 @@
 // Sets important constants and variables
 
 const container = document.getElementById("container");
-let rows = document.getElementsByClassName("gridRow");
-let cells = document.getElementsByClassName("cell");
+let rows = document.querySelector(".gridRow");
+let cells = document.querySelector(".cell");
 
 // Creates a default grid sized 16x16
 function defaultGrid() {
